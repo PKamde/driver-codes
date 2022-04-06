@@ -22,6 +22,23 @@ public class Main {
       	// Your code goes here
         // n is the given input
       
+      int temp = n;
+ 
+        while (n > 0)
+        {
+            int k = n % 10;
+            if (temp % k == 0)
+            {
+                return "YES";
+            }
+            n /= 10;
+        }
+ 
+        return "NO";
+    }
+
+}
+      
         String result = "Special";
         return result;
     }
